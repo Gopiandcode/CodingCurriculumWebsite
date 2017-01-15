@@ -1,0 +1,92 @@
+/* styles to help debug - borders around elements */
+
+.row > div {
+	border: 1px solid black;
+}
+
+.navbar {
+	/*border: 1px solid black;*/
+	background-image: url("banner.bmp");
+	color: white;
+	box-shadow: 0px 4px 61px -38px rgba(0,0,0,1);
+}
+
+
+.footer {
+	border: 1px solid black;
+	margin-left: 1vw;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100.85vw;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#options > li > a:hover {
+	background: orange;
+}
+
+
+#main > .row > div > span {
+	position: absolute;
+	top: 90%;
+	display: table;
+	text-align: center;
+	margin-left: 30%;
+}
+
+#main > .row > div > button {
+	margin-top: 30px;
+}
+
+#main >.row > div{
+	width: 100.85vw;
+	margin-left: -50vw;
+	left: 50%;
+}
+
+#main {
+	margin-top: 50px;
+}
+
+
+/*screen specific options:*/
+
+	/* For v small */
+#main >.row > div {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#navcollapse {
+	background: black;
+}
+	/*small sized screens */
+@media only screen and (min-width : 768px) {
+	#main >.row > div {
+		padding-left: 20vw;
+		padding-right: 20vw;
+		padding-top: 180px;
+		padding-bottom: 180px;
+	}	
+	#navcollapse {
+	background: transparent;
+	}
+}
+	/*Medium sized screens*/
+@media only screen and (min-width: 992px) {
+	#main >.row > div {
+		padding-left: 15vw;
+		padding-right: 15vw;
+		padding-top: 340px;
+		padding-bottom: 340px;
+	}
+	
+	#main > .row > div > button {
+		margin-top: 50px;
+	}
+
+}
