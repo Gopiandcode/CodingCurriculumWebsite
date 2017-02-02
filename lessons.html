@@ -1,0 +1,331 @@
+<html>
+	<head>
+	<title>LearningOOP.co.uk - You.learn(OOP)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script>
+ // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('vid', {
+          height: '540',
+          width: '720',
+          videoId: 'aPI-pyubkz4',
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+
+      function stopVideo() {
+        player.stopVideo();
+      }
+            
+     function changeContent(videoSource, title, subtitle, desc) {
+                var videoTag = document.getElementById("vid");
+                var titleTag = document.getElementById("videotitle");
+                var descTag = document.getElementById("videodesc");
+                var subTag = document.getElementById("teaser");
+                player.loadVideoById(videoSource, 0, "default");
+                titleTag.innerText = title, 
+                subTag.innerText = subtitle;
+                descTag.innerText = desc;
+                return;
+            }       
+            
+        $( document ).ready(function() {
+            var abstractionButton = document.getElementById("abstractionbutton");
+            var abstractionContent = document.getElementById("abstractioncontent");
+            
+                var absstory = document.getElementById("abs-story");
+                var abstheory = document.getElementById("abs-theory");
+            
+            var encapsButton = document.getElementById("encapsulationbutton");
+            var encapsContent = document.getElementById("encapsulationcontent");
+            
+                var encapsstory = document.getElementById("encaps-story");
+                var encapstheory = document.getElementById("encaps-theory");
+            
+            var inheritButton = document.getElementById("inheritancebutton");
+            var inheritContent = document.getElementById("inheritancecontent");
+                
+                var inheritstory = document.getElementById("inherit-story")
+                var inherittheory = document.getElementById("inherit-theory")
+            
+            var polyButton = document.getElementById("polymorphismbutton");
+            var polyContent = document.getElementById("polymorphismcontent");
+            
+                var polystory = document.getElementById("poly-story");
+                var polytheory = document.getElementById("poly-theory");
+            
+            
+            absstory.onclick = function() {
+                changeContent("TE9TpraPlrE", "Episode 1: Abstractions on the mind", "About this episode", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+            };
+            abstheory.onclick = function() {
+                changeContent("aPI-pyubkz4", "Application: Abstraction in Action - NASA Space Sim", "About this lesson", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+            };
+            encapsstory.onclick = function() {
+                changeContent("TE9TpraPlrE", "Episode 2: Encapsulations a real pickle", "About this episode",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+            };
+            encapstheory.onclick = function() {
+                changeContent("aPI-pyubkz4", "Application: Efficient Encapsulation - IBM Watson", "About this lesson", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+            };
+            inheritstory.onclick = function() {
+                changeContent("TE9TpraPlrE", "Episode 3: Inheritance into fortune", "About this episode",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+            };
+            inherittheory.onclick = function() {
+                changeContent("aPI-pyubkz4", "Application: Inheritance - Google Android Development", "About this lesson", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+            };
+            polystory.onclick = function() {
+                changeContent("TE9TpraPlrE", "Episode 4: Polymorphisms the way forward", "About this episode", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+            };
+            polytheory.onclick = function() {
+                changeContent("aPI-pyubkz4", "Application: Polymorphism - Governmental Secret Safeguarding", "About this lesson", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+            };
+            var abs = false;
+            var enc = false;
+            var inh = false;
+            var pol = false;
+            abstractionButton.onclick = function() {
+                abstractionContent.classList.toggle("show");
+                abs = true;
+                if(enc) {
+                    enc = false;
+                    encapsContent.classList.toggle("show");
+                }
+                if(inh) {
+                    inh = false;
+                    inheritContent.classList.toggle("show");
+                    
+                }
+                if(pol) {
+                    pol = false;
+                    polyContent.classList.toggle("show");
+                }
+                
+            }
+            encapsButton.onclick = function() {
+                encapsContent.classList.toggle("show");
+                enc = true;
+                if(abs) {
+                    abs = false;
+                    abstractionContent.classList.toggle("show");
+                }
+                if(inh) {
+                    inh = false;
+                    inheritContent.classList.toggle("show");
+                    
+                }
+                if(pol) {
+                    pol = false;
+                    polyContent.classList.toggle("show");
+                }
+            }
+            inheritButton.onclick = function() {
+                inheritContent.classList.toggle("show");
+                inh = true;
+                if(abs) {
+                    abs = false;
+                    abstractionContent.classList.toggle("show");
+                }
+                if(enc) {
+                    enc = false;
+                    encapsContent.classList.toggle("show");
+                }
+                if(pol) {
+                    pol = false;
+                    polyContent.classList.toggle("show");
+                }
+            }
+            polyButton.onclick = function() {
+                polyContent.classList.toggle("show");
+                pol = true;
+                if(abs) {
+                    abs = false;
+                    abstractionContent.classList.toggle("show");
+                }
+                if(enc) {
+                    enc = false;
+                    encapsContent.classList.toggle("show");
+                }
+                if(inh) {
+                    inh = false;
+                    inheritContent.classList.toggle("show");
+                    
+                }
+            }
+            
+            
+            
+        });
+        
+        </script>
+        
+        
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header" style="box-shadow: 0px 4px 61px -38px rgba(0,0,0,1);">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcollapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span> Menu </span>
+			         </button>
+					<a class="navbar-brand" style="color:white" href="#" >LOOP</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="navcollapse" >
+					<ul class="nav navbar-nav navbar-center" >
+						<li class="dropdown"></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style="text-align:center;color:white;" id="options">
+						<li ><a href="#" style="color:white">Home</a><li>
+						
+						<li class="active "><a href="./lessons.html" style="color:white">Lessons</a></li>
+						
+						
+						<li><a href="#" style="color:white">Teaching Support</a></li>
+	
+						
+						<li><a href="#" style="color:white">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top:60px;">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="row">
+                        <div class="col-xs-12 maincontentheader" id="abstractionbutton">
+                            <div class="maincontentheader">
+                            <h3>
+                                Abstraction
+                            </h3>
+                            </div>
+                        </div>
+                        <div id="abstractioncontent">
+                        <div class="col-xs-12 abs-content contentheading">
+                            <h3 class="SubContent contentheading" id="abs-story">
+                                Story
+                            </h3>
+                        </div>
+                        <div class="col-xs-12 abs-content contentheading">
+                            <h3 class="SubContent contentheading" id="abs-theory">
+                                Theory
+                            </h3>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 maincontentheader" id="encapsulationbutton">
+                            <div class="maincontentheader">
+                            <h3>
+                                Encapsulation
+                            </h3>
+                            </div>
+                        </div>
+                        <div id="encapsulationcontent">
+                        <div class="col-xs-12 encaps-content contentheading">
+                            <h3 class="SubContent contentheading" id="encaps-story">
+                                Story
+                            </h3>
+                        </div>
+                        <div class="col-xs-12 encaps-content contentheading">
+                            <h3 class="SubContent contentheading" id="encaps-theory">
+                                Theory
+                            </h3>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 maincontentheader" id="inheritancebutton">
+                            <div class="maincontentheader">
+                            <h3>
+                                Inheritance
+                            </h3>
+                            </div>
+                        </div>
+                        <div id="inheritancecontent">
+                        <div class="col-xs-12 inherit-content contentheading">
+                            <h3 class="SubContent contentheading" id="inherit-story">
+                                Story
+                            </h3>
+                        </div>
+                        <div class="col-xs-12 inherit-content contentheading">
+                            <h3 class="SubContent contentheading" id="inherit-theory">
+                                Theory
+                            </h3>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 maincontentheader" id="polymorphismbutton">
+                            <div class="maincontentheader">
+                            <h3>
+                                Polymorphism
+                            </h3>
+                            </div>
+                        </div>
+                        <div id="polymorphismcontent">
+                        <div class="col-xs-12 polymorph-content contentheading">
+                            <h3 class="SubContent contentheading" id="poly-story">
+                                Story
+                            </h3>
+                        </div>
+                        <div class="col-xs-12 polymorph-content contentheading">
+                            <h3 class="SubContent contentheading" id="poly-theory">
+                                Theory
+                            </h3>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-9">
+                    <div class="jumbotron heading modifier">
+                        <h2 style="text-align:center;" id="videotitle">
+                            Episode 1: Abstractions on the mind
+                        </h2>
+                    </div>
+                    <div class="">
+                        <div class="row">
+                        <div id="vid" class="col-xs-12">
+                        </div>
+                        </div>
+                        <h3 style="" id="teaser">
+                            About this episode
+                        </h3>
+                        <h4 id="videodesc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.
+
+                        
+                        
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+	</body>
+</html>
