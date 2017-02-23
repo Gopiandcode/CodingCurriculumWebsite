@@ -1,0 +1,36 @@
+###########
+# site.url, site.title
+
+title: Learn Object Oriented Programming 
+email: LOOP@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    Learn Object Oriented Programming is an online course aimed at teaching schoolchildren Object Oriented Programming. Unlike many other simmilar courses, LOOP focuses on providing both theory and application of OOP concepts to help illustrate their usefulness and to explain why they are used. This site was made by a team of UCL students.
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+# path: /Jekyll-LOOP
+# url:  'http://henrythemes.github.io/jekyll-bootstrap-theme'
+url: "http://LOOP.com"
+
+########
+# more settings
+
+collections:
+  mainpages:
+    output: true
+
+markdown: kramdown
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+
+
+exclude:
+- README.md
+
+
+safe: true
+lsi: false
+
