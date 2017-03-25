@@ -1,7 +1,7 @@
 /* styles to help debug - borders around elements */
 
 .row > div {
-	border: 0px solid black;
+	/*border: 0px solid black;*/
     background-color: whitesmoke;
 }
 
@@ -33,7 +33,7 @@ body {
 	background: orange;
 }
 
-
+/*
 #main > .row > div > span {
 	position: absolute;
 	top: 90%;
@@ -51,7 +51,7 @@ body {
 	margin-left: -50vw;
 	left: 50%;
 }
-
+*/
 #main {
 	margin-top: 20px;
 }
@@ -61,10 +61,7 @@ body {
 
 	/* For v small */
 #main >.row > div {
-	padding-left: 10vw;
-	padding-right: 10vw;
-	padding-top: 0px;
-	padding-bottom: 10px;
+
 }
 #navcollapse {
 	background: black;
@@ -72,10 +69,7 @@ body {
 	/*small sized screens */
 @media only screen and (min-width : 768px) {
 	#main >.row > div {
-		padding-left: 20vw;
-		padding-right: 20vw;
-		padding-top: 0px;
-		padding-bottom: 23px;
+
     }	
 	#navcollapse {
 	background: transparent;
@@ -84,10 +78,7 @@ body {
 	/*Medium sized screens*/
 @media only screen and (min-width: 992px) {
 	#main >.row > div {
-		padding-left: 15vw;
-		padding-right: 15vw;
-		padding-top: 10px;
-		padding-bottom: 20px;
+
 	}
 	
 	#main > .row > div > button {
@@ -98,7 +89,7 @@ body {
 
 
 h3 {
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .media {
@@ -232,4 +223,60 @@ h3 {
 
 #polymorphismcontent {
     display: none;
+}
+
+
+$('#myCarousel').carousel({
+                interval: 5000
+        });
+
+        $('#carousel-text').html($('#slide-content-0').html());
+
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click( function(){
+                var id_selector = $(this).attr("id");
+                var id = id_selector.substr(id_selector.length -1);
+                var id = parseInt(id);
+                $('#myCarousel').carousel(id);
+        });
+
+
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid', function (e) {
+                var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+.container-fluid {
+    background-image:
+}
+
+.personals {
+    margin: auto;
+    width: inherit;
+
+}
+
+.moveDown {
+    margin-top: 30
+}
+
+.center {
+    
+}
+
+.centerer {
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text {
+    width: 220;
+}
+
+.viddiv {
+        padding-left: 15vw;
+		padding-right: 15vw;
+		padding-top: 10px;
+		padding-bottom: 20px;
 }

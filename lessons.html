@@ -81,30 +81,200 @@
                 var polystory = document.getElementById("poly-story");
                 var polytheory = document.getElementById("poly-theory");
             
+            var abs_s_questions = document.getElementById("abs_s");
+            var abs_p_questions = document.getElementById("abs_p");
+            var abs_t_questions = document.getElementById("abs_t");
+            
+            var inh_s_questions = document.getElementById("inh_s");
+            var inh_p_questions = document.getElementById("inh_p");
+            var inh_t_questions = document.getElementById("inh_t");
+            
+            var enc_s_questions = document.getElementById("enc_s");
+            var enc_p_questions = document.getElementById("enc_p");
+            var enc_t_questions = document.getElementById("enc_t");
+            
+            var pol_s_questions = document.getElementById("pol_s");
+            var pol_p_questions = document.getElementById("pol_p");
+            var pol_t_questions = document.getElementById("pol_t");
+            
             
             absstory.onclick = function() {
-                changeContent("TE9TpraPlrE", "Episode 1: Abstractions on the mind", "About this episode", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+                changeContent("TE9TpraPlrE", "Episode 1: Abstractions on the mind", "About this episode", "  Meet Jane Jones, a world famous OOP Researcher in OOP Programming. While on another expedition for the Secret Treasure of OOP, once again the trail runs cold. But this time, she stumbles upon a clue - an Ancient Relic, enscribed in OOP knowledge from days past hints at a new oppourtunity. What will develop from this finding?");
+                abs_s_questions.style.display = 'block';
+                abs_p_questions.style.display = 'block';
+                abs_t_questions.style.display = 'none';
+                
+                inh_s_questions.style.display = 'none';
+                inh_p_questions.style.display = 'none';
+                inh_t_questions.style.display = 'none';
+                
+                
+                enc_s_questions.style.display = 'none';
+                enc_p_questions.style.display = 'none';
+                enc_t_questions.style.display = 'none';
+                
+                
+                pol_s_questions.style.display = 'none';
+                pol_p_questions.style.display = 'none';
+                pol_t_questions.style.display = 'none';
             };
             abstheory.onclick = function() {
-                changeContent("aPI-pyubkz4", "Application: Abstraction in Action - NASA Space Sim", "About this lesson", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+                changeContent("aPI-pyubkz4", "Application: Abstraction in Action - NASA Space Sim", "About this lesson", "Now you've had a chance to practice the theory behind abstraction, the core building block of OOP, let's have a look at it in action. In this project, you will be constructing your own Black Hole Simulation, following the same processes as those employed by Scientists at NASA. In order to construct an appropriate simulation, you will need to abstract away the uneccassary information.");
+            
+            
+                abs_s_questions.style.display = 'none';
+                abs_p_questions.style.display = 'none';
+                
+                inh_s_questions.style.display = 'none';
+                inh_p_questions.style.display = 'none';
+                
+                enc_s_questions.style.display = 'none';
+                enc_p_questions.style.display = 'none';
+                
+                pol_s_questions.style.display = 'none';
+                pol_p_questions.style.display = 'none';
+                
+                
+                abs_t_questions.style.display = 'block';
+                inh_t_questions.style.display = 'none';
+                enc_t_questions.style.display = 'none';
+                pol_t_questions.style.display = 'none';            
+            
             };
             encapsstory.onclick = function() {
-                changeContent("TE9TpraPlrE", "Episode 2: Encapsulations a real pickle", "About this episode",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+                changeContent("TE9TpraPlrE", "Episode 2: Encapsulations a real pickle", "About this episode",  "Having retrieved the Book of OOP from the National Library, despite the intervention of an unknown adversary, Jane just now needs to amass the funds to make the expedition to the Treasure of OOP. The Dean is reluctant to agree, considering the numerous prior failed attempts Jane has made to retrieve the Treasure, but when faced with the Relic and Book, he is willing to comply. Things are going smoothly, until disaster strikes when a riot breaks out at the bank...");
+                
+                abs_s_questions.style.display = 'none';
+                abs_p_questions.style.display = 'none';
+                
+                inh_s_questions.style.display = 'none';
+                inh_p_questions.style.display = 'none';
+                
+                enc_s_questions.style.display = 'block';
+                enc_p_questions.style.display = 'block';
+                
+                pol_s_questions.style.display = 'none';
+                pol_p_questions.style.display = 'none';
+            
+                
+                
+                abs_t_questions.style.display = 'none';
+                inh_t_questions.style.display = 'none';
+                enc_t_questions.style.display = 'none';
+                pol_t_questions.style.display = 'none';
+                
             };
             encapstheory.onclick = function() {
-                changeContent("aPI-pyubkz4", "Application: Efficient Encapsulation - IBM Watson", "About this lesson", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+                changeContent("aPI-pyubkz4", "Application: Efficient Encapsulation - IBM Watson", "About this lesson", "Knowing the fundamentals of encapsulation is an important skill, however we can understand that it may not be obvious why it is so important at this point in your Object Oriented Schooling. To help you comprehend the brilliance of encapsulation, we have prepared the following project for you. In this project you will be programming the same mechanics used by world-class medical engineers at IBM, when programming the IBM Watson to handle sensitive patient data.");
+            
+                abs_s_questions.style.display = 'none';
+                abs_p_questions.style.display = 'none';
+                
+                inh_s_questions.style.display = 'none';
+                inh_p_questions.style.display = 'none';
+                
+                enc_s_questions.style.display = 'none';
+                enc_p_questions.style.display = 'none';
+                
+                pol_s_questions.style.display = 'none';
+                pol_p_questions.style.display = 'none';
+                
+                
+                abs_t_questions.style.display = 'none';
+                inh_t_questions.style.display = 'none';
+                enc_t_questions.style.display = 'block';
+                pol_t_questions.style.display = 'none';
+            
             };
             inheritstory.onclick = function() {
-                changeContent("TE9TpraPlrE", "Episode 3: Inheritance into fortune", "About this episode",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+                changeContent("TE9TpraPlrE", "Episode 3: Inheritance into fortune", "About this episode",  "Having obtained the appropriate funding from the Dean, Jane heads for the Airport to book a flight to the Oracle Islands, where she may find the elusive Treasure of OOP once and for all. However, at just at the last moment, disaster strikes - someone has destroyed the only landing strip in the Oracle Islands. Will Jane be able to find a way out of this mess?");
+                
+                abs_s_questions.style.display = 'none';
+                abs_p_questions.style.display = 'none';
+                
+                inh_s_questions.style.display = 'block';
+                inh_p_questions.style.display = 'block';
+                
+                enc_s_questions.style.display = 'none';
+                enc_p_questions.style.display = 'none';
+                
+                pol_s_questions.style.display = 'none';
+                pol_p_questions.style.display = 'none';
+                
+                                
+                abs_t_questions.style.display = 'none';
+                inh_t_questions.style.display = 'none';
+                enc_t_questions.style.display = 'none';
+                pol_t_questions.style.display = 'none';
+                
             };
             inherittheory.onclick = function() {
-                changeContent("aPI-pyubkz4", "Application: Inheritance - Google Android Development", "About this lesson", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+                changeContent("aPI-pyubkz4", "Application: Inheritance - Google Android Development", "About this lesson", "Now you've had a chance to view the theory behind inheritance, to round off your inheritance knowledge, we present to you a project on inheritance. In this project you will be using the same techniques used by software architects at Google when developing Android applications. Learn how using inheritance, engineers can extend and enhance on the functionality of prior codebases without having to rewrite old code.");
+            
+            
+                abs_s_questions.style.display = 'none';
+                abs_p_questions.style.display = 'none';
+                
+                inh_s_questions.style.display = 'none';
+                inh_p_questions.style.display = 'none';
+                
+                enc_s_questions.style.display = 'none';
+                enc_p_questions.style.display = 'none';
+                
+                pol_s_questions.style.display = 'none';
+                pol_p_questions.style.display = 'none';
+                
+                
+                abs_t_questions.style.display = 'none';
+                inh_t_questions.style.display = 'block';
+                enc_t_questions.style.display = 'none';
+                pol_t_questions.style.display = 'none';
+                
+            
             };
             polystory.onclick = function() {
-                changeContent("TE9TpraPlrE", "Episode 4: Polymorphisms the way forward", "About this episode", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+                changeContent("TE9TpraPlrE", "Episode 4: Polymorphisms the way forward", "About this episode", "Having used inheritance to construct a plane capable of landing on water, Jane nears the end of her journey. The ancient ruins of OOP have long since been abandoned, and in theory no-one should be present at the site. But sometimes, theory doesn't quite match up to reality.");
+                
+                abs_s_questions.style.display = 'none';
+                abs_p_questions.style.display = 'none';
+                
+                inh_s_questions.style.display = 'none';
+                inh_p_questions.style.display = 'none';
+                
+                enc_s_questions.style.display = 'none';
+                enc_p_questions.style.display = 'none';
+                
+                pol_s_questions.style.display = 'block';
+                pol_p_questions.style.display = 'block';
+                
+                
+                abs_t_questions.style.display = 'none';
+                inh_t_questions.style.display = 'none';
+                enc_t_questions.style.display = 'none';
+                pol_t_questions.style.display = 'none';
+                
             };
             polytheory.onclick = function() {
-                changeContent("aPI-pyubkz4", "Application: Polymorphism - Governmental Secret Safeguarding", "About this lesson", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.");
+                changeContent("aPI-pyubkz4", "Application: Polymorphism - Governmental Secret Safeguarding", "About this lesson", "In your final application lesson you will be delving head first into the hardest concept in OOP. Polymorphism is a powerful tool, often woefully neglected on part due to it's complex requirements - in this lesson, you'll learn exactly why polymorphism is seen as one of the most powerful Object Oriented tools. You will use the knowledge of the theory of Object Oriented Programming to implement the same design decisions that expert developers at Government security have to consider when constructing secure file uploaders.");
+                
+                abs_s_questions.style.display = 'none';
+                abs_p_questions.style.display = 'none';
+                
+                inh_s_questions.style.display = 'none';
+                inh_p_questions.style.display = 'none';
+                
+                enc_s_questions.style.display = 'none';
+                enc_p_questions.style.display = 'none';
+                
+                pol_s_questions.style.display = 'none';
+                pol_p_questions.style.display = 'none';
+                
+                
+                abs_t_questions.style.display = 'none';
+                inh_t_questions.style.display = 'none';
+                enc_t_questions.style.display = 'none';
+                pol_t_questions.style.display = 'block';
+            
             };
             var abs = false;
             var enc = false;
@@ -195,7 +365,7 @@
 				<span class="sr-only">Toggle navigation</span>
 				<span> Menu </span>
 			         </button>
-					<a class="navbar-brand" style="color:white" href="#" >LOOP</a>
+					<a class="navbar-brand" style="color:white" href="index.html" >LOOP</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="navcollapse" >
@@ -203,15 +373,13 @@
 						<li class="dropdown"></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right" style="text-align:center;color:white;" id="options">
-						<li ><a href="#" style="color:white">Home</a><li>
+						<li ><a href="index.html" style="color:white">Home</a><li>
 						
-						<li class="active "><a href="./lessons.html" style="color:white">Lessons</a></li>
+						<li class="active "><a href="lessons.html" style="color:white">Lessons</a></li>
 						
 						
-						<li><a href="#" style="color:white">Teaching Support</a></li>
-	
 						
-						<li><a href="#" style="color:white">About</a></li>
+						<li><a href="about.html" style="color:white">About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -220,20 +388,23 @@
             <div class="row">
                 <div class="col-xs-3">
                     <div class="row">
+                    <div class="panel-group" id="accordion">
                         <div class="col-xs-12 maincontentheader" id="abstractionbutton">
                             <div class="maincontentheader">
                             <h3>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#abstractioncontent">
                                 Abstraction
+                                </a>
                             </h3>
                             </div>
                         </div>
-                        <div id="abstractioncontent">
-                        <div class="col-xs-12 abs-content contentheading">
+                        <div id="abstractioncontent" class="panel-collapse collapse in">
+                        <div class="col-xs-12 abs-content contentheading ">
                             <h3 class="SubContent contentheading" id="abs-story">
                                 Story
                             </h3>
                         </div>
-                        <div class="col-xs-12 abs-content contentheading">
+                        <div class="col-xs-12 abs-content contentheading ">
                             <h3 class="SubContent contentheading" id="abs-theory">
                                 Theory
                             </h3>
@@ -242,30 +413,35 @@
                         <div class="col-xs-12 maincontentheader" id="encapsulationbutton">
                             <div class="maincontentheader">
                             <h3>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#encapsulationcontent">
                                 Encapsulation
+                                </a>
                             </h3>
                             </div>
                         </div>
-                        <div id="encapsulationcontent">
+                        <div id="encapsulationcontent" class="panel-collapse collapse in">
                         <div class="col-xs-12 encaps-content contentheading">
                             <h3 class="SubContent contentheading" id="encaps-story">
                                 Story
                             </h3>
                         </div>
                         <div class="col-xs-12 encaps-content contentheading">
-                            <h3 class="SubContent contentheading" id="encaps-theory">
+                            <h3 class="SubContent contentheading " id="encaps-theory">
                                 Theory
                             </h3>
                         </div>
                         </div>
+                    </div>
                         <div class="col-xs-12 maincontentheader" id="inheritancebutton">
                             <div class="maincontentheader">
                             <h3>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#inheritancecontent">
                                 Inheritance
+                                </a>
                             </h3>
                             </div>
                         </div>
-                        <div id="inheritancecontent">
+                        <div id="inheritancecontent" class="panel-collapse collapse in">
                         <div class="col-xs-12 inherit-content contentheading">
                             <h3 class="SubContent contentheading" id="inherit-story">
                                 Story
@@ -280,11 +456,13 @@
                         <div class="col-xs-12 maincontentheader" id="polymorphismbutton">
                             <div class="maincontentheader">
                             <h3>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#abstraction-content">
                                 Polymorphism
+                                </a>
                             </h3>
                             </div>
                         </div>
-                        <div id="polymorphismcontent">
+                        <div id="polymorphismcontent" class="panel-collapse collapse">
                         <div class="col-xs-12 polymorph-content contentheading">
                             <h3 class="SubContent contentheading" id="poly-story">
                                 Story
@@ -309,15 +487,648 @@
                         <div id="vid" class="col-xs-12">
                         </div>
                         </div>
-                        <h3 style="" id="teaser">
+                        <div class="panel panel-default">
+                        <h3 style="" id="teaser" class=panel-heading>
                             About this episode
                         </h3>
-                        <h4 id="videodesc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis luctus sapien, quis suscipit lorem accumsan nec. Integer bibendum laoreet purus, eu dignissim erat ullamcorper a. Cras at commodo metus, ac mattis nibh. Nunc pharetra lacus eu nisi auctor euismod. Morbi eu velit et libero dignissim eleifend a nec leo. Pellentesque fermentum erat nisl, id rutrum neque aliquam venenatis. Nulla eu commodo ex, eu pretium turpis.
-
-                        
-                        
+                        <h4 id="videodesc" class="panel-body">
+                        Meet Jane Jones, a world famous OOP Researcher in OOP Programming. While on another expedition for the Secret
+                            Treasure of OOP, once again the trail runs cold. But this time, she stumbles upon a clue - an Ancient Relic,
+                            enscribed in OOP knowledge from days past hints at a new oppourtunity. What will develop from this finding?
+                            
                         </h4>
+                            <h6 class="panel-body">
+                                As always, answers for the following questions can be found in the about section.
+                            
+                            </h6>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <div class="panel panel-default" id="abs_p">
+                            <h4 class="panel-heading">
+                                Practice Questions
+                            </h4>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. Consider an application system controlling a bank, and one controlling a Game Console.                 
+                                        </h4>
+                                        <div class="list-group-text">
+                                        What different attributes would an Account class have in each of these examples? 
+                                            <br>
+                                            <b>Try producing UML diagrams for each class.</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        2. Consider an application to organise books in a bookstore, and an application used to manage book printing orders
+                                        </h4>
+                                        <div class="list-group-text">
+                                        What different attributes would a Book class have in each of these examples?  
+                                            <br>
+                                            <b>Try producing UML diagrams for each class.</b>                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        3. Consider an application to manage printing documents, and an application to display documents.                                         </h4>
+                                        <div class="list-group-text">
+                                            What different attributes would a Document class have in each of these examples? 
+                                            <br>
+                                            <b>Try producing UML diagrams for each class.</b>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                        
+                        <div class="panel panel-default" id="abs_s">
+                            <h4 class="panel-heading">
+                                Story Questions
+                            </h4>
+                            <div class="panel-body">
+                                <h4 class="text-center">For these questions, you will need to download the following application:
+                                     link
+                                </h4>
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. Using the template provided, try making your own book abstraction.                 
+                                        </h4>
+                                        <div class="list-group-text">
+                                        For now, try just including title. Once you are done, load it into the application, and view the results.
+                                            <br>
+                                            <b>Template Link</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        2. It looks like some customers want to specify books by more than just their titles.
+                                        </h4>
+                                        <div class="list-group-text">
+                                        <b>Try improving your abstraction by adding more fields.</b>                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        3. Making an abstraction more specific is not always a good thing.
+                                        </h4>
+                                        <div class="list-group-text">
+                                            Try adding some irrelevant attributes to your abstraction, such as colour.
+                                            <br>
+                                            <b>Why is this a bad decision?</b>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    
+                        
+                        
+                        <div class="panel panel-default" id="enc_p" style="display: none;">
+                            <h4 class="panel-heading">
+                                Practice Questions
+                            </h4>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. Given the following class diagram, try producing corresponding Java code.                  
+                                        </h4>
+                                        <div class="list-group-text">
+                                        (Don’t worry about method bodies). 
+                                            <br>
+                                            <b>Class Diagram</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        2. Given the following class diagram, try producing corresponding Java code.
+                                        </h4>
+                                        <div class="list-group-text">
+                                        (Don’t worry about method bodies).  
+                                            <br>
+                                            <b>Class Diagram</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        3. Given the following class diagram, try producing corresponding Java code.
+                                        </h4>
+                                        <div class="list-group-text">
+                                        (Don’t worry about method bodies).  
+                                            <br>
+                                            <b>Class Diagram</b>
+                                        </div>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                        
+                        <div class="panel panel-default" id="enc_s" style="display: none;">
+                            <h4 class="panel-heading">
+                                Story Questions - Fixing the Management System
+                            </h4>
+                            <div class="panel-body">
+                                <h4 class="text-center">For these questions, you will need to download the following application:
+                                     link
+                                </h4>
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. First, to fix the manager application, we’ll need to reconstruct the account class.                 
+                                        </h4>
+                                        <div class="list-group-text">
+                                         Using the template provided, try creating a bank account class. Once you are done, load it into the application to view the results.
+                                            <br>
+                                            <b>Template Link</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        2. Did you see that? It looks like there’s another entity on the system..
+                                        </h4>
+                                        <div class="list-group-text">
+                                           And he seems to keep on removing your stored data. Remember those exercises on encapsulation? 
+                                            <br/>
+                                        <b> Try implementing it here to fix the issue. </b>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="panel panel-default" id="inh_p" style="display: none;">
+                            <h4 class="panel-heading">
+                                Practice Questions
+                            </h4>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1.From the following UML diagram of a notebook and a textbook class in a book management system, try using abstraction to extract out common functionality into a parent class.  
+                                        </h4>
+                                        <div class="list-group-text">
+                                            Remember, your parent class should have an appropriate name. 
+                                            <br>
+                                            <b>UML Diagram</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        2.From the following UML diagram of a mouse and keyboard class in a physical device management system, try using abstraction to extract out common functionality. 
+                                        </h4>
+                                        <div class="list-group-text">
+                                        Remember, your parent class should have an appropriate name.   
+                                            <br>
+                                            <b>UML Diagram</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        3. From the following UML diagram of a driver and a car in a car hire management system, try extracting out common functionality.
+                                        </h4>
+                                            <div class="list-group-text">
+                                            Remember, your parent class should have an appropriate name.
+                                            <br>
+                                            <b>UML Diagram</b>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                        
+                        <div class="panel panel-default" id="inh_s" style="display: none;">
+                            <h4 class="panel-heading">
+                                Story Questions
+                            </h4>
+                            <div class="panel-body">
+                                <h4 class="text-center">For these questions, you will need to download the following application:
+                                     link
+                                </h4>
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. To make a water plane, we need to first build some parts that are waterproof.                  
+                                        </h4>
+                                        <div class="list-group-text">
+                                         Using the template provided, produce a class of waterproof landing gear. 
+                                            <br>
+                                            <b>Template Link</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        2. Construct a plane that can land on water.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             To make a functional plane, numerous factors, such as wind-speed, air-humidity, altitude all need to be taken into account, making the class very complex. However, as the plane model is already preprogramed into the model, we can make use of this code and reuse it for our water plane.
+                                            
+                                            <br/>
+                                            Use inheritance to construct your own water plane, except have it contain a copy of waterproof landing gear, and override the land method to call deploy on the new landing gear. 
+                                            <br/>
+                                        <b>Try it out on the application when you are done. </b>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                                                <div class="panel panel-default" id="pol_p" style="display: none;">
+                            <!-- <h4 class="panel-heading">
+                                Practice Questions
+                            </h4>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1.From the following UML diagram of a notebook and a textbook class in a book management system, try using abstraction to extract out common functionality into a parent class.  
+                                        </h4>
+                                        <div class="list-group-text">
+                                            Remember, your parent class should have an appropriate name. 
+                                            <br>
+                                            <b>UML Diagram</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        2.From the following UML diagram of a mouse and keyboard class in a physical device management system, try using abstraction to extract out common functionality. 
+                                        </h4>
+                                        <div class="list-group-text">
+                                        Remember, your parent class should have an appropriate name.   
+                                            <br>
+                                            <b>UML Diagram</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        3. From the following UML diagram of a driver and a car in a car hire management system, try extracting out common functionality.
+                                        </h4>
+                                            <div class="list-group-text">
+                                            Remember, your parent class should have an appropriate name.
+                                            <br>
+                                            <b>UML Diagram</b>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                            </div>-->
+                        
+                        </div>
+                    
+                        
+                        <div class="panel panel-default" id="pol_s" style="display: none;">
+                            <h4 class="panel-heading">
+                                Story Questions
+                            </h4>
+                            <div class="panel-body">
+                                <h4 class="text-center">For these questions, you will need to download the following application:
+                                     link
+                                </h4>
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1.In order to make the ancient mechanism work, we’ll need to re-implement it’s checking methods.                 
+                                        </h4>
+                                        <div class="list-group-text">
+                                         Before we begin, using the template provided, construct your own mechanism class.  
+                                            <br>
+                                            <b>Template Link</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        2. Fix the ancient mechanism so it crushes rocks.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             The problem at the moment, is that all the inputs to the sorter are passed to the key slot of the door. 
+                                            <br/>
+                                             For now, let’s try stopping this by implementing a sort function which takes in rocks, and calls their crush method. 
+                                            <br/>
+                                        <b>Try it out on the application when you are done. </b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                                                                <h4 class="list-group-heading">
+                                        3. Now, it seems like all the rocks are crushed. 
+                                        </h4>
+                                        <div class="list-group-text">
+                                             This still causes issues, as we don’t want to crush the ruby.
+                                            <br/>
+                                            Can you think of a way to implement polymorphism to avoid this? 
+                                            <br/>
+                                        <b>Try it out on the application when you are done. </b>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        
+                        
+                        <div class="panel panel-default" id="abs_t" style="display: none;">
+                            <h4 class="panel-heading">
+                                Theory Questions
+                            </h4>
+                            <div class="panel-body">
+                                <h4 class="text-center">For these questions, you will need to download the following application:
+                                     link
+                                </h4>
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. What attributes you will include in your simulation?                 
+                                        </h4>
+                                        <div class="list-group-text">
+                                         Bear in mind that particles have many attributes such as atomic composition, electrical charge, mass, but in this simulation not all these attributes matter as much.   
+                                            <br>
+                                            <b>Write down a list of attributes you might use in your simulation</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        2. Build an abstraction representing the object.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             Using the template provided, try building your own particle class. For now, try giving it just an x and a y. 
+                                            <br/>
+                                             When you are done, load it into the application, and view the results.  
+                                            <br/>
+                                        <b>Template Link </b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        3. Improve your simulation by adding a mass attribute.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             If you tried to generate a black hole, you would have noticed that the application indicates that it can’t proceed as not all entities have mass. 
+                                            <br/>
+                                            This makes sense, as the key distinguishing factor of a black hole is its significant gravitational field. 
+                                            <br/>
+                                        <b>Try adding a mass attribute to your abstraction of a particle. </b>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        4. Improve your simulation by adding a velocity attribute.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             It seems that, despite all these changes, your particle still doesn’t move.  
+                                            <br/>
+                                             Why is that – well, for the particle to be able to move, we need some way of tracking its velocity. 
+                                            <br/>
+                                        <b>Try adding a velocity attribute for the x and y directions in your abstraction. </b>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        
+                        
+                        <div class="panel panel-default" id="enc_t" style="display: none;">
+                            <h4 class="panel-heading">
+                                Theory Questions
+                            </h4>
+                            <div class="panel-body">
+                                <h4 class="text-center">For these questions, you will need to download the following application:
+                                     link
+                                </h4>
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. Construct a patient class to hold all the details about the patient.                 
+                                        </h4>
+                                        <div class="list-group-text">
+                                         To develop this system, the first thing we need to make, is a patient class to hold all the details about the patient.    
+                                            <br/>
+                                            Using the template provided, try constructing your own patient class. What attributes define a patient – make sure to include a name so that we can easily identify each patient. Once you are done, load the class into the application and view the result. 
+                                            <br/>
+                                            
+                                            <b>Template Link</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        2. Improve your model by adding symptoms for each patient.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             Now, this system doesn’t seem to do much – in order to provide functionality, we need to add a way of storing information about the patient’s symptoms and some way to store the cure that we calculate. 
+                                            <br/>
+                                        <b>Add a string array to each patient to store their symptoms.</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        3. It looks like there's a bug on the system - patient data is being changed.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             It looks like there’s a bug somewhere else in the system which messes with the patient data. 
+                                            <br/>
+                                            While one solution could be to fix the bug itself, but when working with systems as big as Watson, one developer only designs a small section of code. 
+                                            <br/>
+                                            Thus, it’s our responsibility to make sure that, irrespective of what other people might try to do to our code, we make it work. 
+                                            <br/>
+                                        <b>Try implementing encapsulation in this system to make it work. (Hint: try adding private) </b>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        4. Implement methods to selectively allow use of the private details.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             Now the class is encapsulated, our code is protected, however now, even Watson can’t access it. 
+                                            <br/>
+                                             We need some way of allowing people to view or modify only certain sections of our code. This can be done by implementing a getter and setter. . Consider patient symptoms – Watson needs access to it, so we can allow Watson access by implementing a getSymptoms function, which returns a copy of the application symptoms. 
+                                            <br/>
+                                        <b>Try adding getters and setters for the other fields. </b>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <div class="panel panel-default" id="inh_t" style="display: none;">
+                            <h4 class="panel-heading">
+                                Theory Questions
+                            </h4>
+                            <div class="panel-body">
+                                <h4 class="text-center">For these questions, you will need to download the following application:
+                                     link
+                                </h4>
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. Construct a class to represent the new phone system.                 
+                                        </h4>
+                                        <div class="list-group-text">
+                                         First before we start developing the new phone system, we need to make a class to represent it.
+                                            <br/>
+                                            Use the template provided to construct a class for your own version of the phone operating system. 
+                                            <br/>
+                                            
+                                            <b>Template Link</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        2. Improve your Operating System by inheriting from the base Android Operating System.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             The android operating system is built upon layers of complexity, however, luckily for us, we can inherit the existing operating system to get all this code for free.  
+                                            <br/>
+                                        <b> Modify your class to inherit the android operating system class.</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        3. Some base android features don't work with the new hardware. Can we fix it?
+                                        </h4>
+                                        <div class="list-group-text">
+                                            Looking at the simulator, it seems like some functions aren’t working on the new phone – this is because the code in the old android operating system didn’t know about the new features in the latest phone. 
+                                            <br/>
+                                            Let’s try and fix that.
+                                            <br/>
+                                        <b>First override the takePhoto method to use the camera variable in your OS.  </b>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        4. Now override the initialization method of the operating class to add a listener for the right button click.
+                                        </h4>
+                                        <div class="list-group-text">
+                                        <b> Try running this. </b>
+                                        </div>
+                                    </li>
+                                
+                                    
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        5. It looks like all the old android listener code isn't running anymore after we overrided it.
+                                        </h4>
+                                        <div class="list-group-text">
+                                            It looks like that while we’re adding a listener, all the complex code in the old android operating system isn’t being set up, as we’ve overridden the initialize. 
+                                            <br/>
+                                        <b>Try using the super method to fix this.</b>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="panel panel-default" id="pol_t" style="display: none;">
+                            <h4 class="panel-heading">
+                                Theory Questions
+                            </h4>
+                            <div class="panel-body">
+                                <h4 class="text-center">For these questions, you will need to download the following application:
+                                     link
+                                </h4>
+                                <div class="list-group">
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        1. Construct a class to represent the file uploader.                 
+                                        </h4>
+                                        <div class="list-group-text">
+                                         To build a file checker, we first need to construct the class to hold all our logic. 
+                                            <br/>
+                                             Using the template provided, create your own file checker. Once you are done, load it into the application and view the results. 
+                                            <br/>
+                                            
+                                            <b>Template Link</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        2. Implement a checking system to verify the inputs.
+                                        </h4>
+                                        <div class="list-group-text">
+                                             Now now, the check button doesn’t do anything, as the logic hasn’t been defined – in order to check the docx file, add a check method to your class, which returns the result of calling verify on the docx file.   
+                                            <br/>
+                                        <b> Modify your class to check the docx files.</b>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        3. Improve your checking system to verify a larger variety of files..
+                                        </h4>
+                                        <div class="list-group-text">
+                                            It looks like we’ve got some more files to check. Add corresponding check functions which run the verify method of their inputs.  
+                                            <br/>
+     
+                                        <b>Modify your class to use overloading to check more types of file.  </b>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-heading">
+                                        4. Now override the initialization method of the operating class to add a listener for the right button click.
+                                        </h4>
+                                        <div class="list-group-text">
+                                            
+                                            Notice how all this code you’ve written follows the same structure?
+                                            <br>
+                                             It turns out all the files with a verify method are subclasses of verifiable. 
+                                            <br>
+                                            
+                                        <b>Try implementing polymorphism to make your code simpler.</b>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        
+                        
+                    
                     </div>
                 </div>
             </div>
