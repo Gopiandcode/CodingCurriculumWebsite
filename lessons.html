@@ -613,7 +613,7 @@
                                         1. Given the following class diagram, try producing corresponding Java code.                  
                                         </h4>
                                         <div class="list-group-text">
-                                        (Don’t worry about method bodies). 
+                                        (Don't worry about method bodies). 
                                             <br>
                                             <b>Class Diagram</b>
                                             <br>
@@ -625,7 +625,7 @@
                                         2. Given the following class diagram, try producing corresponding Java code.
                                         </h4>
                                         <div class="list-group-text">
-                                        (Don’t worry about method bodies).  
+                                        (Don't worry about method bodies).  
                                             <br>
                                             <b>Class Diagram</b>
                                             </br>
@@ -637,7 +637,7 @@
                                         3. Given the following class diagram, try producing corresponding Java code.
                                         </h4>
                                         <div class="list-group-text">
-                                        (Don’t worry about method bodies).  
+                                        (Don't worry about method bodies).  
                                             <br>
                                             <b>Class Diagram</b>
                                             <br>
@@ -661,7 +661,7 @@
                                 <div class="list-group">
                                     <li class="list-group-item">
                                         <h4 class="list-group-heading">
-                                        1. First, to fix the manager application, we’ll need to reconstruct the account class.                 
+                                        1. First, to fix the manager application, we'll need to reconstruct the account class.                 
                                         </h4>
                                         <div class="list-group-text">
                                          Using the template provided, try creating a bank account class. Once you are done, load it into the application to view the results.
@@ -671,7 +671,7 @@
                                     </li>
                                     <li class="list-group-item">
                                                                                 <h4 class="list-group-heading">
-                                        2. Did you see that? It looks like there’s another entity on the system..
+                                        2. Did you see that? It looks like there's another entity on the system..
                                         </h4>
                                         <div class="list-group-text">
                                            And he seems to keep on removing your stored data. Remember those exercises on encapsulation? 
@@ -836,7 +836,7 @@
                                 <div class="list-group">
                                     <li class="list-group-item">
                                         <h4 class="list-group-heading">
-                                        1.In order to make the ancient mechanism work, we’ll need to re-implement it’s checking methods.                 
+                                        1.In order to make the ancient mechanism work, we'll need to re-implement it's checking methods.                 
                                         </h4>
                                         <div class="list-group-text">
                                          Before we begin, using the template provided, construct your own mechanism class.  
@@ -851,7 +851,7 @@
                                         <div class="list-group-text">
                                              The problem at the moment, is that all the inputs to the sorter are passed to the key slot of the door. 
                                             <br/>
-                                             For now, let’s try stopping this by implementing a sort function which takes in rocks, and calls their crush method. 
+                                             For now, let's try stopping this by implementing a sort function which takes in rocks, and calls their crush method. 
                                             <br/>
                                         <b>Try it out on the application when you are done. </b>
                                         </div>
@@ -861,7 +861,7 @@
                                         3. Now, it seems like all the rocks are crushed. 
                                         </h4>
                                         <div class="list-group-text">
-                                             This still causes issues, as we don’t want to crush the ruby.
+                                             This still causes issues, as we don't want to crush the ruby.
                                             <br/>
                                             Can you think of a way to implement polymorphism to avoid this? 
                                             <br/>
@@ -912,7 +912,7 @@
                                         3. Improve your simulation by adding a mass attribute.
                                         </h4>
                                         <div class="list-group-text">
-                                             If you tried to generate a black hole, you would have noticed that the application indicates that it can’t proceed as not all entities have mass. 
+                                             If you tried to generate a black hole, you would have noticed that the application indicates that it can't proceed as not all entities have mass. 
                                             <br/>
                                             This makes sense, as the key distinguishing factor of a black hole is its significant gravitational field. 
                                             <br/>
@@ -925,7 +925,7 @@
                                         4. Improve your simulation by adding a velocity attribute.
                                         </h4>
                                         <div class="list-group-text">
-                                             It seems that, despite all these changes, your particle still doesn’t move.  
+                                             It seems that, despite all these changes, your particle still doesn't move.  
                                             <br/>
                                              Why is that – well, for the particle to be able to move, we need some way of tracking its velocity. 
                                             <br/>
@@ -967,7 +967,7 @@
                                         2. Improve your model by adding symptoms for each patient.
                                         </h4>
                                         <div class="list-group-text">
-                                             Now, this system doesn’t seem to do much – in order to provide functionality, we need to add a way of storing information about the patient’s symptoms and some way to store the cure that we calculate. 
+                                             Now, this system doesn't seem to do much – in order to provide functionality, we need to add a way of storing information about the patient's symptoms and some way to store the cure that we calculate. 
                                             <br/>
                                         <b>Add a string array to each patient to store their symptoms.</b>
                                         </div>
@@ -977,11 +977,11 @@
                                         3. It looks like there's a bug on the system - patient data is being changed.
                                         </h4>
                                         <div class="list-group-text">
-                                             It looks like there’s a bug somewhere else in the system which messes with the patient data. 
+                                             It looks like there's a bug somewhere else in the system which messes with the patient data. 
                                             <br/>
                                             While one solution could be to fix the bug itself, but when working with systems as big as Watson, one developer only designs a small section of code. 
                                             <br/>
-                                            Thus, it’s our responsibility to make sure that, irrespective of what other people might try to do to our code, we make it work. 
+                                            Thus, it's our responsibility to make sure that, irrespective of what other people might try to do to our code, we make it work. 
                                             <br/>
                                         <b>Try implementing encapsulation in this system to make it work. (Hint: try adding private) </b>
                                         </div>
@@ -992,7 +992,7 @@
                                         4. Implement methods to selectively allow use of the private details.
                                         </h4>
                                         <div class="list-group-text">
-                                             Now the class is encapsulated, our code is protected, however now, even Watson can’t access it. 
+                                             Now the class is encapsulated, our code is protected, however now, even Watson can't access it. 
                                             <br/>
                                              We need some way of allowing people to view or modify only certain sections of our code. This can be done by implementing a getter and setter. . Consider patient symptoms – Watson needs access to it, so we can allow Watson access by implementing a getSymptoms function, which returns a copy of the application symptoms. 
                                             <br/>
@@ -1046,9 +1046,9 @@
                                         3. Some base android features don't work with the new hardware. Can we fix it?
                                         </h4>
                                         <div class="list-group-text">
-                                            Looking at the simulator, it seems like some functions aren’t working on the new phone – this is because the code in the old android operating system didn’t know about the new features in the latest phone. 
+                                            Looking at the simulator, it seems like some functions aren't working on the new phone – this is because the code in the old android operating system didn't know about the new features in the latest phone. 
                                             <br/>
-                                            Let’s try and fix that.
+                                            Let's try and fix that.
                                             <br/>
                                         <b>First override the takePhoto method to use the camera variable in your OS.  </b>
                                         </div>
@@ -1069,7 +1069,7 @@
                                         5. It looks like all the old android listener code isn't running anymore after we overrided it.
                                         </h4>
                                         <div class="list-group-text">
-                                            It looks like that while we’re adding a listener, all the complex code in the old android operating system isn’t being set up, as we’ve overridden the initialize. 
+                                            It looks like that while we're adding a listener, all the complex code in the old android operating system isn't being set up, as we've overridden the initialize. 
                                             <br/>
                                         <b>Try using the super method to fix this.</b>
                                         </div>
@@ -1113,7 +1113,7 @@
                                         2. Implement a checking system to verify the inputs.
                                         </h4>
                                         <div class="list-group-text">
-                                             Now now, the check button doesn’t do anything, as the logic hasn’t been defined – in order to check the docx file, add a check method to your class, which returns the result of calling verify on the docx file.   
+                                             Now now, the check button doesn't do anything, as the logic hasn't been defined – in order to check the docx file, add a check method to your class, which returns the result of calling verify on the docx file.   
                                             <br/>
                                         <b> Modify your class to check the docx files.</b>
                                         </div>
@@ -1123,7 +1123,7 @@
                                         3. Improve your checking system to verify a larger variety of files..
                                         </h4>
                                         <div class="list-group-text">
-                                            It looks like we’ve got some more files to check. Add corresponding check functions which run the verify method of their inputs.  
+                                            It looks like we've got some more files to check. Add corresponding check functions which run the verify method of their inputs.  
                                             <br/>
      
                                         <b>Modify your class to use overloading to check more types of file.  </b>
@@ -1136,7 +1136,7 @@
                                         </h4>
                                         <div class="list-group-text">
                                             
-                                            Notice how all this code you’ve written follows the same structure?
+                                            Notice how all this code you've written follows the same structure?
                                             <br>
                                              It turns out all the files with a verify method are subclasses of verifiable. 
                                             <br>
